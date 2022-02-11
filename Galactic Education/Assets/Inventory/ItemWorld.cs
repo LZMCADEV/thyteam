@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Experimental.Rendering.Universal;
+ 
 public class ItemWorld : MonoBehaviour
 {
 
@@ -18,8 +19,12 @@ public class ItemWorld : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
 
+    public Light2D light2D;
+
+
     private void Awake(){
         spriteRenderer = GetComponent<SpriteRenderer>();
+        
 
     }
 
@@ -28,7 +33,16 @@ public class ItemWorld : MonoBehaviour
     public void SetItem(Item item) {
         this.item = item;
         spriteRenderer.sprite = item.GetSprite();
+        light2D.color = item.GetColor();
+
     }
 
+    public Item GetItem(){
+        return item;
+    }
+
+    public void DestroySelf(){
+        Destroy(gameObject);
+    }
 
 }

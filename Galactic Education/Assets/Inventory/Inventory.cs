@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,33 +6,42 @@ using UnityEngine;
 public class Inventory 
 {
     // Start is called before the first frame update
+    public event EventHandler OnItemListChanged;
     private List<Item> itemList;
 
     public Inventory() {
         itemList = new List<Item>();
 
         AddItem(new Item{itemType = Item.ItemType.Sword, amount=1});
-        AddItem(new Item{itemType = Item.ItemType.HealthPotion, amount=1});
+        AddItem(new Item{itemType = Item.ItemType.HealthPotion, amount=2});
         AddItem(new Item{itemType = Item.ItemType.StaminaPotion, amount=1});
-        AddItem(new Item{itemType = Item.ItemType.StaminaPotion, amount=1});
-        AddItem(new Item{itemType = Item.ItemType.StaminaPotion, amount=1});
-        AddItem(new Item{itemType = Item.ItemType.Sword, amount=1});
-        AddItem(new Item{itemType = Item.ItemType.HealthPotion, amount=1});
-        AddItem(new Item{itemType = Item.ItemType.StaminaPotion, amount=1});
-        AddItem(new Item{itemType = Item.ItemType.StaminaPotion, amount=1});
-        AddItem(new Item{itemType = Item.ItemType.StaminaPotion, amount=1});
-        AddItem(new Item{itemType = Item.ItemType.Sword, amount=1});
-        AddItem(new Item{itemType = Item.ItemType.HealthPotion, amount=1});
-        AddItem(new Item{itemType = Item.ItemType.StaminaPotion, amount=1});
-        AddItem(new Item{itemType = Item.ItemType.StaminaPotion, amount=1});
-        AddItem(new Item{itemType = Item.ItemType.StaminaPotion, amount=1});
-        AddItem(new Item{itemType = Item.ItemType.StaminaPotion, amount=1});
+
 
         Debug.Log(itemList.Count);
     }
 
     public void AddItem(Item item){
-        itemList.Add(item);
+        Debug.Log(item.itemType);
+        if (item.IsStackable()){ 
+            bool itemAlreadyInInventory = false;
+            foreach (Item inventoryItem in itemList){
+                if (inventoryItem.itemType == item.itemType) {
+                    Debug.Log(inventoryItem.amount.ToString() + inventoryItem.itemType.ToString());
+                    inventoryItem.amount += item.amount;
+                    itemAlreadyInInventory = true;
+                }
+            }
+            if (!itemAlreadyInInventory){
+                
+                itemList.Add(item);
+            }
+
+            
+        } else {
+            itemList.Add(item);
+        }
+        
+        OnItemListChanged?.Invoke(this, EventArgs.Empty);
     }
 
     public List<Item> GetItemlist(){

@@ -59,7 +59,7 @@ public class UI_Inventory : MonoBehaviour
             }
             
 
-            x = x + 2.305f;
+            x = x + 2.270f;
             if (x > 9.0) {
                 x = 0.0f;
                 if (ylvl == 0) {

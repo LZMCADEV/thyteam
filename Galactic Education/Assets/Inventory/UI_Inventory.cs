@@ -57,7 +57,7 @@ public class UI_Inventory : MonoBehaviour
             itemSlotRectTransform.gameObject.SetActive(true);
 
             itemSlotRectTransform.GetComponent<Button_UI>().ClickFunc = () => {
-
+                inventory.UseItem(item);
             };
 
             itemSlotRectTransform.GetComponent<Button_UI>().MouseRightClickFunc = () => {

@@ -13,7 +13,7 @@ public class Player : MonoBehaviour
     private void Awake()
     {
 
-        inventory = new Inventory();
+        inventory = new Inventory(UseItem);
         uiInventory.SetPlayer(this);
         uiInventory.SetInventory(inventory);
         
@@ -31,6 +31,18 @@ public class Player : MonoBehaviour
             itemWorld.DestroySelf();
 
         } 
+    }
+
+    private void UseItem (Item item){
+        switch (item.itemType){
+            case Item.ItemType.HealthPotion:
+                inventory.RemoveItem(new Item { itemType = Item.ItemType.HealthPotion, amount = 1});
+                break;
+            case Item.ItemType.StaminaPotion:
+                inventory.RemoveItem(new Item { itemType = Item.ItemType.StaminaPotion, amount = 1});
+                break;
+
+        }
     }
 
     void Update()

@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     {
 
         inventory = new Inventory();
+        uiInventory.SetPlayer(this);
         uiInventory.SetInventory(inventory);
         
         //ItemWorld.SpawnItemWorld(new Vector3(0, 0), new Item {itemType = Item.ItemType.HealthPotion, amount = 1});

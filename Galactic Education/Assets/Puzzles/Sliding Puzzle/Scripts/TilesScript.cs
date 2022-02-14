@@ -9,6 +9,8 @@ public class TilesScript : MonoBehaviour
     private SpriteRenderer _sprite;
     private Color color;
     public int number;
+    public bool inRightPlace;
+
     void Awake()
     {
         targetPosition = transform.position;
@@ -24,7 +26,9 @@ public class TilesScript : MonoBehaviour
         
         if (targetPosition == correctPosition) {
             color.a = 1f;
+            inRightPlace = true;
         } else {
+            inRightPlace = false;
             color.a = 0.5f;
         }
         _sprite.color = color;

@@ -12,7 +12,7 @@ public class GameScript : MonoBehaviour
     void Start()
     {
         _camera = Camera.main;
-        Shuffle();
+        //Shuffle();
     }
 
     // Update is called once per frame
@@ -35,6 +35,20 @@ public class GameScript : MonoBehaviour
                 }
             }
         }
+
+        int correctTiles = 0;
+        foreach (var a in tiles){
+            if (a != null) {
+                if (a.inRightPlace)
+                    correctTiles++;
+            }
+        }
+
+        if (correctTiles == tiles.Length - 1){
+            Debug.Log (message: "You Won");
+        }
+
+
     }
 
     public void Shuffle(){

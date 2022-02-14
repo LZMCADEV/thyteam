@@ -34,12 +34,14 @@ public class Inventory
 
                     
                 } else if ( inventoryItem.itemType == item.itemType && (inventoryItem.amount + item.amount) >= item.MaxAmount()) {
+                    itemDisplacement = 0;
                     do {
 
                         itemDisplacement += 1;
                         item.amount -= 1;
 
                     } while ((inventoryItem.amount + item.amount) >= item.MaxAmount());
+
 
                     inventoryItem.amount += item.amount;
                     item.amount = itemDisplacement;
@@ -69,10 +71,12 @@ public class Inventory
         if (item.IsStackable()){ 
             Item itemInInventory = null;
             foreach (Item inventoryItem in itemList){
-                if (inventoryItem.itemType == item.itemType) {
+                if (inventoryItem.itemType == item.itemType && inventoryItem.amount == item.amount) {
                     inventoryItem.amount -= item.amount;
                     itemInInventory = inventoryItem;
+                    
                 }
+                
             }
             if (itemInInventory != null && itemInInventory.amount <=0 ){
                 

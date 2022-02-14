@@ -8,17 +8,26 @@ public class GameScript : MonoBehaviour
     private Camera _camera;
     [SerializeField] private TilesScript[] tiles;
     private int emptySpaceIndex = 8;
+    
+    public Variable_Bool isSlidingPuzzleCompleted;
+
     // Start is called before the first frame update
+
     void Start()
     {
         _camera = Camera.main;
-        //Shuffle();
+        Shuffle();
+        isSlidingPuzzleCompleted.value = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0)){
+
+        
+
+
+        if (Input.GetMouseButtonDown(0)&& !isSlidingPuzzleCompleted.value ){
             Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
             if (hit){
@@ -35,18 +44,21 @@ public class GameScript : MonoBehaviour
                 }
             }
         }
+        if (!isSlidingPuzzleCompleted.value){
+            int correctTiles = 0;
+            foreach (var a in tiles){
+                if (a != null) {
+                    if (a.inRightPlace)
+                        correctTiles++;
+                }
+            }
 
-        int correctTiles = 0;
-        foreach (var a in tiles){
-            if (a != null) {
-                if (a.inRightPlace)
-                    correctTiles++;
+            if (correctTiles == tiles.Length - 1){
+                isSlidingPuzzleCompleted.value = true;
+                Debug.Log (message: "You Won");
             }
         }
 
-        if (correctTiles == tiles.Length - 1){
-            Debug.Log (message: "You Won");
-        }
 
 
     }

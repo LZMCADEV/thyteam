@@ -248,6 +248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: {x: 0, y: 0, z: 0}
   number: 3
+  inRightPlace: 0
 --- !u!1 &136910125
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,6 +374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: {x: 0, y: 0, z: 0}
   number: 5
+  inRightPlace: 0
 --- !u!1 &209391798
 GameObject:
   m_ObjectHideFlags: 0
@@ -498,6 +500,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: {x: 0, y: 0, z: 0}
   number: 2
+  inRightPlace: 0
 --- !u!1 &320745848
 GameObject:
   m_ObjectHideFlags: 0
@@ -777,6 +780,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: {x: 0, y: 0, z: 0}
   number: 4
+  inRightPlace: 0
 --- !u!1 &1260615951
 GameObject:
   m_ObjectHideFlags: 0
@@ -902,6 +906,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: {x: 0, y: 0, z: 0}
   number: 6
+  inRightPlace: 0
 --- !u!1 &1272291925
 GameObject:
   m_ObjectHideFlags: 0
@@ -1027,6 +1032,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: {x: 0, y: 0, z: 0}
   number: 1
+  inRightPlace: 0
 --- !u!1 &1355030647
 GameObject:
   m_ObjectHideFlags: 0
@@ -1230,6 +1236,8 @@ MonoBehaviour:
   - {fileID: 1899800499}
   - {fileID: 2066125537}
   - {fileID: 0}
+  isSlidingPuzzleCompleted: {fileID: 11400000, guid: a20c4c6938f695246951a00548a07b2d,
+    type: 2}
 --- !u!1 &1899800495
 GameObject:
   m_ObjectHideFlags: 0
@@ -1355,6 +1363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: {x: 0, y: 0, z: 0}
   number: 7
+  inRightPlace: 0
 --- !u!1 &2066125533
 GameObject:
   m_ObjectHideFlags: 0
@@ -1480,6 +1489,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: {x: 0, y: 0, z: 0}
   number: 8
+  inRightPlace: 0
 --- !u!1 &2070442187
 GameObject:
   m_ObjectHideFlags: 0

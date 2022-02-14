@@ -7,7 +7,7 @@ public class InventoryButton : MonoBehaviour
 
     private Transform inventoryPanel;
     CanvasGroup canvasGroup;
-
+    public Variable_Bool isGamePaused;
 
     public void Awake (){
         inventoryPanel = transform.Find("Panel");
@@ -28,13 +28,20 @@ public class InventoryButton : MonoBehaviour
             canvasGroup = GetComponent<CanvasGroup>();
             Debug.Log(canvasGroup.alpha);
             if (canvasGroup.alpha == 1f){
+                Time.timeScale = 1f;
+                isGamePaused.value = false;
                 canvasGroup.alpha = 0f;
                 canvasGroup.interactable = false;
                 canvasGroup.blocksRaycasts = false;
             } else {
-                canvasGroup.alpha = 1f;
-                canvasGroup.interactable = true;
-                canvasGroup.blocksRaycasts = true;
+                if (!isGamePaused.value) {
+                    Time.timeScale = 0f;
+                    isGamePaused.value = true;
+                    canvasGroup.alpha = 1f;
+                    canvasGroup.interactable = true;
+                    canvasGroup.blocksRaycasts = true;
+                }
+                
             }
         }
     }

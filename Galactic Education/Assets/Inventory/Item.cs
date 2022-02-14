@@ -37,6 +37,17 @@ public class Item
         }
     }
 
+    public int MaxAmount(){
+        switch (itemType){
+            default:
+            case ItemType.Sword: 
+                return 1;
+            case ItemType.HealthPotion:
+            case ItemType.StaminaPotion:
+                return 2;
+        }
+    }
+
     public bool IsStackable() {
         switch (itemType){
             default:

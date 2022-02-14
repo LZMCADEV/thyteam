@@ -9,28 +9,46 @@ public class Inventory
     public event EventHandler OnItemListChanged;
     private List<Item> itemList;
     private Action<Item> useItemAction;
+    private int itemDisplacement = 0;
 
     public Inventory(Action<Item> useItemAction) {
         this.useItemAction = useItemAction;
         itemList = new List<Item>();
 
         AddItem(new Item{itemType = Item.ItemType.Sword, amount=1});
-        AddItem(new Item{itemType = Item.ItemType.HealthPotion, amount=2});
+        AddItem(new Item{itemType = Item.ItemType.HealthPotion, amount=1});
         AddItem(new Item{itemType = Item.ItemType.StaminaPotion, amount=1});
 
 
-        Debug.Log(itemList.Count);
+
     }
 
     public void AddItem(Item item){
-        Debug.Log(item.itemType);
         if (item.IsStackable()){ 
             bool itemAlreadyInInventory = false;
             foreach (Item inventoryItem in itemList){
-                if (inventoryItem.itemType == item.itemType) {
-                    Debug.Log(inventoryItem.amount.ToString() + inventoryItem.itemType.ToString());
+                if (inventoryItem.itemType == item.itemType && (inventoryItem.amount + item.amount) <= item.MaxAmount()) {
                     inventoryItem.amount += item.amount;
                     itemAlreadyInInventory = true;
+                    
+
+                    
+                } else if ( inventoryItem.itemType == item.itemType && (inventoryItem.amount + item.amount) >= item.MaxAmount()) {
+                    do {
+
+                        itemDisplacement += 1;
+                        item.amount -= 1;
+
+                    } while ((inventoryItem.amount + item.amount) >= item.MaxAmount());
+
+                    inventoryItem.amount += item.amount;
+                    item.amount = itemDisplacement;
+                    itemList.Add(item);
+                    itemAlreadyInInventory = true;
+                    OnItemListChanged?.Invoke(this, EventArgs.Empty);
+                    break;
+                    
+                    
                 }
             }
             if (!itemAlreadyInInventory){

@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5270191198856716265}
   - component: {fileID: 5270191198856716270}
   - component: {fileID: 5270191198856716271}
-  - component: {fileID: 242250973}
   m_Layer: 5
   m_Name: Counter
   m_TagString: Untagged
@@ -152,27 +151,6 @@ MonoBehaviour:
   spiritScore: {fileID: 5270191198856716270}
   changeCounter: 0
   SpiritPoints: {fileID: 11400000, guid: 9ed9fd6d5ab02a44c8c0e20be8b847ba, type: 2}
---- !u!114 &242250973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5270191198856716269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cfcc9ceea0bf419cb3bcaf548c2600d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  saveLayer: 0
-  saveTag: 0
-  saveName: 0
-  saveHideFlags: 0
-  saveActive: 0
-  saveChildren: 0
-  componentsToSave:
-  - {fileID: 5270191198856716271}
-  - {fileID: 5270191198856716270}
 --- !u!1 &5270191199339366877
 GameObject:
   m_ObjectHideFlags: 0
@@ -185,7 +163,6 @@ GameObject:
   - component: {fileID: 5270191199339366878}
   - component: {fileID: 5270191199339366879}
   - component: {fileID: 5270191199339366876}
-  - component: {fileID: -1272300024555548963}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -274,47 +251,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &-1272300024555548963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5270191199339366877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baff8732cd3074ef88b34f9cc487846d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabId: 4481026767575623532
-  localRefs:
-    _Keys:
-    - {fileID: 5270191199339366877}
-    - {fileID: 5270191199339366873}
-    - {fileID: 5270191199339366878}
-    - {fileID: 5270191199339366879}
-    - {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-    - {fileID: 5270191199339366876}
-    - {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-    - {fileID: -1272300024555548963}
-    - {fileID: 5270191199762181648}
-    - {fileID: 5270191199762181651}
-    - {fileID: 5270191200473457282}
-    - {fileID: 5270191200473457293}
-    - {fileID: 5270191200473457295}
-    - {fileID: 5270191200473457292}
-    - {fileID: 0}
-    - {fileID: 2800000, guid: 0f2020309787ca74da7c539b486e2718, type: 3}
-    - {fileID: 21300000, guid: 0f2020309787ca74da7c539b486e2718, type: 3}
-    - {fileID: 5270191198856716269}
-    - {fileID: 5270191198856716268}
-    - {fileID: 5270191198856716265}
-    - {fileID: 5270191198856716270}
-    - {fileID: 5270191198856716271}
-    - {fileID: 11500000, guid: cec1a2f8f5a2f3c489547694551b5fc9, type: 3}
-    - {fileID: 11400000, guid: 9ed9fd6d5ab02a44c8c0e20be8b847ba, type: 2}
-    - {fileID: 11500000, guid: b684d003e1a44054db591da78f5a55cb, type: 3}
-    _Values: 77bda5db0c28de134ff926e5e14f12115c4a4d50ef9b2b49ddc0d64da895932a2732d68c02c21a38c323457a3f2493454591d42f7e21b025925bfe4c52916b1b8c510c13259f146730141312e0a68800541b933a6ac2a9471c0405593c311954729f1112e880e05a7d6d5f9234c306146f9685fd496f0d7305ab08de6545d461d2985fbe6b89e72dc5c64828ddc48359030ed3c5d5afae40ef600d3c7801f43dbf3f3f649bb8575d1ad9033b862671373061dc57720e8c7eba60523368dc5a38467919e3fc180b4a
 --- !u!1 &5270191199762181648
 GameObject:
   m_ObjectHideFlags: 0

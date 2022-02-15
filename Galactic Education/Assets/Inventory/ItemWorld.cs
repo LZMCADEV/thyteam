@@ -25,11 +25,16 @@ public class ItemWorld : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         textMeshPro = transform.Find("Text").GetComponent<TextMeshPro>();
 
+        
+
+
     }
 
     
 
     public static ItemWorld DropItem(Vector3 dropPosition, Item item){
+
+
 
         Vector3 randomDir = UtilsClass.GetRandomDir();
         ItemWorld itemWorld = SpawnItemWorld(dropPosition + randomDir * 1.5f, item);
@@ -55,7 +60,7 @@ public class ItemWorld : MonoBehaviour
     public Item GetItem(){
         return item;
     }
-    
+
     public static ItemWorld SpawnItemWorld(Vector3 position, Item item){
         Transform transform = Instantiate(ItemAssets.Instance.pfItemWorld, position, Quaternion.identity);
 

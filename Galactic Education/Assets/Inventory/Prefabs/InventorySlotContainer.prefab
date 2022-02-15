@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8732971557236429781}
   - component: {fileID: 1957201790379170095}
   - component: {fileID: -198978412634637091}
+  - component: {fileID: -2963403476486207753}
   m_Layer: 5
   m_Name: InventorySlotContainer
   m_TagString: Untagged
@@ -113,7 +114,26 @@ MonoBehaviour:
     - {fileID: 598776598530670816}
     - {fileID: 6037520022289097683}
     - {fileID: 3361336808342237424}
-    _Values: 84bcd105b0d4f447362c59ec35c4a008a5b97634815f176a40143dc575e6262d289a217a86db1841d50dc6964e0477238d61e7661f66f31cd33bc59c962fd250052b14d0e61b8f36a745c0e52cb46e4b8b6052d7cd8d4c3ea8054ec2a0b4d8031fe86385e6b8f6570ee23b16fa807c54567f1036dcfb8378ded677eb6a51d612
+    _Values: 84bcd105b0d4f447362c59ec35c4a008a5b97634815f176a40143dc575e6262d289a217a86db1841d50dc6964e0477238d61e7661f66f31cd33bc59c962fd250052b14d0e61b8f3682e0ced56b1cff428b6052d7cd8d4c3ea8054ec2a0b4d8031fe86385e6b8f6570ee23b16fa807c54567f1036dcfb8378ded677eb6a51d612
+--- !u!114 &-2963403476486207753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3113061259293444840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cfcc9ceea0bf419cb3bcaf548c2600d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveLayer: 1
+  saveTag: 1
+  saveName: 1
+  saveHideFlags: 1
+  saveActive: 1
+  saveChildren: 0
+  componentsToSave: []
 --- !u!1 &6740550815402697328
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,6 +240,7 @@ GameObject:
   - component: {fileID: 4701972117848272348}
   - component: {fileID: 5281046068281322163}
   - component: {fileID: 8751596713346819560}
+  - component: {fileID: 2528751911538515368}
   m_Layer: 5
   m_Name: InventorySlot
   m_TagString: Untagged
@@ -285,3 +306,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 30
+--- !u!114 &2528751911538515368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7597746867886939141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cfcc9ceea0bf419cb3bcaf548c2600d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveLayer: 1
+  saveTag: 1
+  saveName: 1
+  saveHideFlags: 1
+  saveActive: 1
+  saveChildren: 0
+  componentsToSave: []

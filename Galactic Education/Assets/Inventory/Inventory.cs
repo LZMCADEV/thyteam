@@ -11,15 +11,28 @@ public class Inventory
     private Action<Item> useItemAction;
     private int itemDisplacement = 0;
 
+    public void Start(){
+        
+    }
+
     public Inventory(Action<Item> useItemAction) {
         this.useItemAction = useItemAction;
-        itemList = new List<Item>();
 
-        AddItem(new Item{itemType = Item.ItemType.Sword, amount=1});
-        AddItem(new Item{itemType = Item.ItemType.HealthPotion, amount=1});
-        AddItem(new Item{itemType = Item.ItemType.StaminaPotion, amount=1});
+        if(ES3.KeyExists("save_itemList")) {  
+            itemList = ES3.Load<List<Item>>("save_itemList");
+            OnItemListChanged?.Invoke(itemList, EventArgs.Empty);
+            
+        } else {
+            itemList = new List<Item>();
 
+            AddItem(new Item{itemType = Item.ItemType.Sword, amount=1});
+            AddItem(new Item{itemType = Item.ItemType.HealthPotion, amount=1});
+            AddItem(new Item{itemType = Item.ItemType.StaminaPotion, amount=1});
+            ES3.Save("save_itemList", GetItemlist());
+        }
+        
 
+        
 
     }
 
@@ -63,7 +76,7 @@ public class Inventory
             itemList.Add(item);
         }
         
-        
+        ES3.Save("save_itemList", GetItemlist());
         OnItemListChanged?.Invoke(this, EventArgs.Empty);
     }
 
@@ -88,7 +101,7 @@ public class Inventory
         } else {
             itemList.Remove(item);
         }
-        
+        ES3.Save("save_itemList", itemList);
         OnItemListChanged?.Invoke(this, EventArgs.Empty);
     }
 

@@ -16,11 +16,21 @@ public class Player : MonoBehaviour
         inventory = new Inventory(UseItem);
         uiInventory.SetPlayer(this);
         uiInventory.SetInventory(inventory);
+
+        Debug.Log(transform.position);
+
+        if(ES3.KeyExists("save_PlayerPos")) {  
+            transform.position = ES3.Load<Vector3>("save_PlayerPos");
+            
+        } else {
+            ES3.Save("save_PlayerPos", transform.position);
+        }
+    }
         
         //ItemWorld.SpawnItemWorld(new Vector3(0, 0), new Item {itemType = Item.ItemType.HealthPotion, amount = 1});
         //ItemWorld.SpawnItemWorld(new Vector3(0, 1), new Item {itemType = Item.ItemType.StaminaPotion, amount = 1});
         //ItemWorld.SpawnItemWorld(new Vector3(0, -1), new Item {itemType = Item.ItemType.Sword, amount = 1});
-    }
+    
 
     // Update is called once per frame
 
@@ -45,8 +55,8 @@ public class Player : MonoBehaviour
         }
     }
 
-    void Update()
-    {
-        
+    public void Update(){
+        ES3.Save("save_PlayerPos", transform.position);
     }
+    
 }

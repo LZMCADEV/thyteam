@@ -85,9 +85,10 @@ GameObject:
   - component: {fileID: 4443689699142270101}
   - component: {fileID: 4443689699142270100}
   - component: {fileID: 4443689699142270090}
-  - component: {fileID: 4443689699142270089}
   - component: {fileID: 4443689699142270094}
   - component: {fileID: 4443689699142270095}
+  - component: {fileID: 1734831862}
+  - component: {fileID: 1734831859}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -149,7 +150,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 10789cc21e1421745818e89d59d95f36, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -222,26 +223,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   rb: {fileID: 4443689699142270101}
---- !u!114 &4443689699142270089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4443689699142270103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cfcc9ceea0bf419cb3bcaf548c2600d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  saveLayer: 0
-  saveTag: 0
-  saveName: 0
-  saveHideFlags: 0
-  saveActive: 0
-  saveChildren: 0
-  componentsToSave:
-  - {fileID: 4443689699142270088}
 --- !u!114 &4443689699142270094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,3 +248,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiInventory: {fileID: 0}
+--- !u!210 &1734831862
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4443689699142270103}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+--- !u!114 &1734831859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4443689699142270103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cfcc9ceea0bf419cb3bcaf548c2600d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveLayer: 0
+  saveTag: 0
+  saveName: 0
+  saveHideFlags: 0
+  saveActive: 0
+  saveChildren: 0
+  componentsToSave:
+  - {fileID: 4443689699142270094}
+  - {fileID: 4443689699142270088}

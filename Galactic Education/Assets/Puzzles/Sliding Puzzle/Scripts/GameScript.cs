@@ -8,16 +8,39 @@ public class GameScript : MonoBehaviour
     private Camera _camera;
     [SerializeField] private TilesScript[] tiles;
     private int emptySpaceIndex = 8;
+
     
     public Variable_Bool isSlidingPuzzleCompleted;
 
     // Start is called before the first frame update
 
+
     void Start()
     {
+
         _camera = Camera.main;
-        Shuffle();
-        isSlidingPuzzleCompleted.value = false;
+        
+        
+        if(ES3.KeyExists("alreadyShuffled")) {
+            tiles = ES3.Load<TilesScript[]>("save_tiles");
+            isSlidingPuzzleCompleted.value = ES3.Load<bool>("save_isSlidingPuzzleCompleted");
+
+
+
+        } else {
+            Shuffle();
+            ES3.Save("save_tiles", tiles);
+            ES3.Save("alreadyShuffled", true);
+            isSlidingPuzzleCompleted.value = false;
+            ES3.Save("save_isSlidingPuzzleCompleted", isSlidingPuzzleCompleted.value);
+        }
+        
+
+
+        
+
+        
+
     }
 
     // Update is called once per frame
@@ -41,8 +64,10 @@ public class GameScript : MonoBehaviour
                     tiles[emptySpaceIndex] = tiles[tileIndex];
                     tiles[tileIndex] = null;
                     emptySpaceIndex = tileIndex;
+                    ES3.Save("save_tiles", tiles);
                 }
             }
+
         }
         if (!isSlidingPuzzleCompleted.value){
             int correctTiles = 0;

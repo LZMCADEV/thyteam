@@ -32,6 +32,7 @@ public class UI_Inventory : MonoBehaviour
         inventory.OnItemListChanged += Inventory_OnItemListChanged;
         
         RefreshInventoryItems();
+        
 
 
     }
@@ -102,6 +103,9 @@ public class UI_Inventory : MonoBehaviour
 
         
         }
+
+        
+
     }
 
 }

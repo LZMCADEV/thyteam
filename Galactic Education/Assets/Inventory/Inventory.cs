@@ -63,6 +63,7 @@ public class Inventory
             itemList.Add(item);
         }
         
+        
         OnItemListChanged?.Invoke(this, EventArgs.Empty);
     }
 

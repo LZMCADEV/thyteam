@@ -196,6 +196,7 @@ GameObject:
   - component: {fileID: 8133281782159888771}
   - component: {fileID: 7898649320911352121}
   - component: {fileID: 4306034749368522147}
+  - component: {fileID: 2031881134828280282}
   m_Layer: 0
   m_Name: pfItemWorld
   m_TagString: Untagged
@@ -309,7 +310,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 2
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -330,6 +331,43 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light2D: {fileID: 3206972610693305593}
+--- !u!114 &2031881134828280282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5556593245228159726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baff8732cd3074ef88b34f9cc487846d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabId: 3473158023027912105
+  localRefs:
+    _Keys:
+    - {fileID: 5556593245228159726}
+    - {fileID: 7133425593059395680}
+    - {fileID: 7145709949536745599}
+    - {fileID: 21300000, guid: e0f836e46ee4d6042a0738aea726c761, type: 3}
+    - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    - {fileID: 8133281782159888771}
+    - {fileID: 7898649320911352121}
+    - {fileID: 4306034749368522147}
+    - {fileID: 11500000, guid: 59d3ecc52232b8b4e9344ef3e1288ce6, type: 3}
+    - {fileID: 3206972610693305593}
+    - {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+    - {fileID: 2031881134828280282}
+    - {fileID: 7738072387803394112}
+    - {fileID: 7634976034385736989}
+    - {fileID: 1638236559272653284}
+    - {fileID: 993220033393216715}
+    - {fileID: 6738635300430312799}
+    - {fileID: -4213792995044987671, guid: 9aa699b2257c1b04f8c50430ed49120c, type: 2}
+    - {fileID: 1264610295621781683}
+    - {fileID: 0}
+    - {fileID: 7709260338369451215}
+    _Values: 66c29edc30bbec585196cfc392301b6c81d7e2ef69c65526870b406c02317e2b0b255dd83c2ec6784f28aeaa846f557952f384a905239a2d17c554247b80551f17a4b86dd2432f5061a5c06d8a0054174b39e5f1522bd91776cf3f88255e0330d28f92e0b7e7a60fc333485f632ca317713c6fb466467142822f1d5d7c478940570f6405928b9f31200a4b798cc6855e7457f962cdb896745e5d9381e4a0a12c4377498d6f575603
 --- !u!1 &7738072387803394112
 GameObject:
   m_ObjectHideFlags: 0

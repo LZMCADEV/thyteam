@@ -350,6 +350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   light2D: {fileID: 3206972610693305593}
+  worldManager: {fileID: 0}
 --- !u!1 &7738072387803394112
 GameObject:
   m_ObjectHideFlags: 0

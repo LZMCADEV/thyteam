@@ -40,6 +40,8 @@ public class ItemWorld : MonoBehaviour
         ItemWorld itemWorld = SpawnItemWorld(dropPosition + randomDir * 1.5f, item);
         itemWorld.GetComponent<Rigidbody2D>().AddForce(randomDir * 1.5f, ForceMode2D.Impulse);
 
+        GameObject.Find("WorldManager").GetComponent<WorldManager>().addWorldItem(item, itemWorld.GetComponent<Transform>().position);
+
         return itemWorld;
 
     }
@@ -62,9 +64,19 @@ public class ItemWorld : MonoBehaviour
     }
 
     public static ItemWorld SpawnItemWorld(Vector3 position, Item item){
-        Transform transform = Instantiate(ItemAssets.Instance.pfItemWorld, position, Quaternion.identity);
 
-        ItemWorld itemWorld = transform.GetComponent<ItemWorld>();
+        Debug.Log("pfItem " + ItemAssets.Instance.pfItemWorld);
+        
+        Debug.Log("Pos " + position);
+        Debug.Log("Quaternion " + Quaternion.identity);
+        Debug.Log("Item" + item);
+        
+
+        Transform _transform = Instantiate(ItemAssets.Instance.pfItemWorld, position, Quaternion.identity);
+
+        Debug.Log(_transform);
+
+        ItemWorld itemWorld = _transform.GetComponent<ItemWorld>();
         
         itemWorld.SetItem(item);
 

@@ -37,15 +37,20 @@ public class ItemWorld : MonoBehaviour
 
 
         Vector3 randomDir = UtilsClass.GetRandomDir();
+        
         ItemWorld itemWorld = SpawnItemWorld(dropPosition + randomDir * 1.5f, item);
-        itemWorld.GetComponent<Rigidbody2D>().AddForce(randomDir * 1.5f, ForceMode2D.Impulse);
+        //itemWorld.GetComponent<Rigidbody2D>().AddForce(randomDir * 1.5f, ForceMode2D.Impulse);
+        
+        GameObject.Find("WorldManager").GetComponent<WorldManager>().addListStuff(item, itemWorld.GetComponent<Rigidbody2D>().position);
 
-        GameObject.Find("WorldManager").GetComponent<WorldManager>().addWorldItem(item, itemWorld.GetComponent<Transform>().position);
+        
+        //GameObject.Find("WorldManager").GetComponent<WorldManager>().addWorldItem(item, itemWorld.GetComponent<Transform>().position);
 
         return itemWorld;
 
     }
 
+    
 
     public void SetItem(Item item) {
         this.item = item;
@@ -65,16 +70,11 @@ public class ItemWorld : MonoBehaviour
 
     public static ItemWorld SpawnItemWorld(Vector3 position, Item item){
 
-        Debug.Log("pfItem " + ItemAssets.Instance.pfItemWorld);
-        
-        Debug.Log("Pos " + position);
-        Debug.Log("Quaternion " + Quaternion.identity);
-        Debug.Log("Item" + item);
+
         
 
         Transform _transform = Instantiate(ItemAssets.Instance.pfItemWorld, position, Quaternion.identity);
 
-        Debug.Log(_transform);
 
         ItemWorld itemWorld = _transform.GetComponent<ItemWorld>();
         
@@ -86,6 +86,8 @@ public class ItemWorld : MonoBehaviour
     } 
 
     public void DestroySelf(){
+        GameObject.Find("WorldManager").GetComponent<WorldManager>().removeListStuff(item, GetComponent<Rigidbody2D>().position);
+        //GameObject.Find("WorldManager").GetComponent<WorldManager>().removeWorldItem(item, GetComponent<Transform>().position);
         Destroy(gameObject);
     }
 

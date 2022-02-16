@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     [SerializeField] private UI_Inventory uiInventory;
 
     private Inventory inventory;
+    
 
     // Start is called before the first frame update
     private void Awake()
@@ -17,7 +18,6 @@ public class Player : MonoBehaviour
         uiInventory.SetPlayer(this);
         uiInventory.SetInventory(inventory);
 
-        Debug.Log(transform.position);
 
         if(ES3.KeyExists("save_PlayerPos")) {  
             transform.position = ES3.Load<Vector3>("save_PlayerPos");
@@ -34,10 +34,15 @@ public class Player : MonoBehaviour
 
     // Update is called once per frame
 
+    
+
     private void OnTriggerEnter2D(Collider2D collider) {
         ItemWorld itemWorld = collider.GetComponent<ItemWorld>();
         if (itemWorld != null){
             inventory.AddItem(itemWorld.GetItem());
+
+
+            
             itemWorld.DestroySelf();
 
         } 

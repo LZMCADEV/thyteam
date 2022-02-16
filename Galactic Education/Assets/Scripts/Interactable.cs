@@ -32,7 +32,6 @@ public class Interactable : MonoBehaviour
         if(collision.gameObject.CompareTag("Player")){
             if (!hasAlreadyEntered){
                 isInRange = true;
-                Debug.Log("Player is now in range");
                 hasAlreadyEntered = true;
             }
 
@@ -42,7 +41,6 @@ public class Interactable : MonoBehaviour
     private void OnTriggerExit2D (Collider2D collision){
         if (collision.gameObject.CompareTag("Player")){
             isInRange = false;
-            Debug.Log("Player is not in range");
             hasAlreadyEntered = false;
         }
 

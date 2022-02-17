@@ -58,10 +58,9 @@ public class WorldManager : MonoBehaviour
         }
     
         foreach (Stuff stuff in listStuff){
-            Debug.Log("2-" + _position);
-            Debug.Log("1-" + stuff.position);
+
             
-            if (stuff.item == _item && stuff.position == _position){
+            if ((stuff.item.itemType == _item.itemType) && (stuff.item.amount == _item.amount) && (stuff.position == _position)){
                 removeStuff = stuff;
                 break;
             }

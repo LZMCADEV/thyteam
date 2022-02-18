@@ -60,7 +60,7 @@ public class GameScript : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
             if (hit){
                 if (Vector2.Distance(emptySpace.position, hit.transform.position) < 4){
-                    Vector2 lastEmptySpacePosition = new Vector3(emptySpace.position.x, emptySpace.position.y, 0);
+                    Vector2 lastEmptySpacePosition = emptySpace.position;
                     TilesScript thisTile = hit.transform.GetComponent<TilesScript>();
                     emptySpace.position = thisTile.targetPosition;
                     thisTile.targetPosition = lastEmptySpacePosition;
@@ -69,7 +69,7 @@ public class GameScript : MonoBehaviour
                     tiles[emptySpaceIndex] = tiles[tileIndex];
                     tiles[tileIndex] = null;
                     emptySpaceIndex = tileIndex;
-                    ES3.Save("save_tiles", tiles);
+                    
                 }
             }
 
@@ -85,9 +85,11 @@ public class GameScript : MonoBehaviour
 
             if (correctTiles == tiles.Length - 1){
                 isSlidingPuzzleCompleted.value = true;
-                Debug.Log (message: "You Won");
+                
             }
         }
+
+        ES3.Save("save_tiles", tiles);
 
 
 
@@ -126,7 +128,7 @@ public class GameScript : MonoBehaviour
             }
         } while (invertion%2 != 0);
 
-        
+        ES3.Save("save_tiles", tiles);
     }
 
     public int findIndex(TilesScript ts){

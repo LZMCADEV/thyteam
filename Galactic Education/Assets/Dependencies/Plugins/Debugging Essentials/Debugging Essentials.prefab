@@ -265,7 +265,7 @@ MonoBehaviour:
   disableUnityDevelopmentConsole: 0
   useSameEditorAsBuildShowKey: 1
   showToggleKeyEditor:
-    keyCode: 44
+    keyCode: 0
     specialKeys: 2
   showToggleKeyBuild:
     keyCode: 290

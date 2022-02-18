@@ -41,7 +41,7 @@ public class LevelLoader : MonoBehaviour
 
         SceneManager.LoadScene(levelName);
 
-
+        Debug.Log("Loaded Level " + levelName);
 
     }
 

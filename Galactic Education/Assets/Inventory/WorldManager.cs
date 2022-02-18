@@ -21,7 +21,7 @@ public class WorldManager : MonoBehaviour
 
     private List<Stuff> listStuff;
     //Sets the List
-    public void Start(){
+    public void Awake(){
         if(!ES3.KeyExists("save_listStuff")) {
             listStuff = new List<Stuff>();
             

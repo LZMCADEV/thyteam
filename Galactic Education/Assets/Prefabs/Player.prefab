@@ -248,6 +248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiInventory: {fileID: 0}
+  Spirit_Score: {fileID: 11400000, guid: 9ed9fd6d5ab02a44c8c0e20be8b847ba, type: 2}
 --- !u!210 &1734831862
 SortingGroup:
   m_ObjectHideFlags: 0

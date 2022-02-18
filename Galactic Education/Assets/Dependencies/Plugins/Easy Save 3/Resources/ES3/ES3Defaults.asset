@@ -30,8 +30,19 @@ MonoBehaviour:
     serializationDepthLimit: 64
     assemblyNames:
     - Assembly-CSharp
+    - QFSW.QC.Grammar
     - Cinemachine
+    - QFSW.QC
+    - QFSW.QC.Demo
+    - QFSW.QC.Parsers
+    - QFSW.QC.Extras
+    - QFSW.QC.Serializers
+    - QFSW.QC.UI
+    - QFSW.QC.Suggestors
     - PsdPlugin
+    - QFSW.QC.QGUI
+    - QFSW.QC.Editor
+    - QFSW.QC.Editor.Tools
     showAdvancedSettings: 0
   addMgrToSceneAutomatically: 0
   autoUpdateReferences: 1

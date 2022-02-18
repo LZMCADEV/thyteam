@@ -14,7 +14,7 @@ public class Spirit_Score : MonoBehaviour
     void Start()
     {
 
-        SpiritPoints.value = 0;
+        
         
     }
 

@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using QFSW.QC;
 
+[CommandPrefix("slidingPuzzle.")]
 public class GameScript : MonoBehaviour
 {
     [SerializeField] public Transform emptySpace = null;
@@ -28,6 +30,7 @@ public class GameScript : MonoBehaviour
 
 
         } else {
+            ES3.Save("save_backupTiles", tiles);
             Shuffle();
             ES3.Save("save_tiles", tiles);
             ES3.Save("alreadyShuffled", true);
@@ -44,11 +47,13 @@ public class GameScript : MonoBehaviour
     }
 
     // Update is called once per frame
+    [Command("solve")]
+    public void Solve(){
+        tiles = ES3.Load<TilesScript[]>("save_backupTiles");
+        
+    }
     void Update()
     {
-
-        
-
 
         if (Input.GetMouseButtonDown(0)&& !isSlidingPuzzleCompleted.value ){
             Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
@@ -87,11 +92,13 @@ public class GameScript : MonoBehaviour
 
 
     }
-
+    [Command("shuffle")]
     public void Shuffle(){
+        isSlidingPuzzleCompleted.value = false;
         if (emptySpaceIndex != 8){
+            
             var tileOn8LastPos = tiles[8].targetPosition;
-            tiles[15].targetPosition = emptySpace.position;
+            tiles[8].targetPosition = emptySpace.position;
             emptySpace.position = tileOn8LastPos;
             tiles[emptySpaceIndex] = tiles[8];
             tiles[8] = null;

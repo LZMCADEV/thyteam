@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using QFSW.QC;
+using QFSW.QC.Actions;
 
 public class Inventory 
 {
@@ -35,6 +37,10 @@ public class Inventory
         
 
     }
+
+
+
+    
 
     public void AddItem(Item item){
         if (item.IsStackable()){ 

@@ -1,14 +1,51 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using QFSW.QC.Actions;
+using QFSW.QC;
 
+[CommandPrefix("Player.")]
 public class Player : MonoBehaviour
 {
 
     [SerializeField] private UI_Inventory uiInventory;
 
     private Inventory inventory;
+    private List<Item> itemList;
+    public Variable_Int Spirit_Score;
     
+
+    [Command("spiritScore")]
+    public void setSpiritScore(int amount){
+
+        if (amount > 999){
+            Spirit_Score.value = 999;
+        } else if (amount < 0) {
+            Spirit_Score.value = 0;
+        } else {
+            Spirit_Score.value = amount;
+        }
+        
+        
+    }
+
+    [Command("add_health_potion")]
+    public void addHealthPotion(int amount){
+        
+        itemList = ES3.Load<List<Item>>("save_itemList");
+        inventory.AddItem(new Item { itemType = Item.ItemType.HealthPotion, amount = amount});
+        ES3.Save("save_itemList", inventory.GetItemlist());
+        
+    }
+
+    [Command("add_stamina_potion")]
+    public void addStaminaPotion(int amount){
+        itemList = ES3.Load<List<Item>>("save_itemList");
+        inventory.AddItem(new Item { itemType = Item.ItemType.StaminaPotion, amount = amount});
+        ES3.Save("save_itemList", inventory.GetItemlist());
+        
+    }
+
 
     // Start is called before the first frame update
     private void Awake()
@@ -33,6 +70,8 @@ public class Player : MonoBehaviour
     
 
     // Update is called once per frame
+
+    
 
     
 

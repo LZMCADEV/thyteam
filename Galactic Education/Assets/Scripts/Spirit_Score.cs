@@ -11,17 +11,8 @@ public class Spirit_Score : MonoBehaviour
     public int changeCounter = 0;
     public Variable_Int SpiritPoints;
 
-    void Start()
-    {
-
-        
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+    public void setSpiritScore(int amount){
+        SpiritPoints = ES3.Load<Variable_Int>("save_SpiritPoints");
         if (SpiritPoints.value > 999){
             changeCounter = 999;
             SpiritPoints.value = 999;
@@ -32,7 +23,8 @@ public class Spirit_Score : MonoBehaviour
             SpiritPoints.value = 0;
         }
         else {
-            SpiritPoints.value = changeCounter;
+            changeCounter = amount;
+            SpiritPoints.value = amount;
         }
 
         if (SpiritPoints.value < 0){
@@ -51,10 +43,27 @@ public class Spirit_Score : MonoBehaviour
         else {
             spiritScore.text = "999";
         }
+        ES3.Save("save_SpiritPoints", SpiritPoints);
+    }
 
-        
+    void Start()
+    {
 
+        if(ES3.KeyExists("save_SpiritPoints")) {  
+            SpiritPoints = ES3.Load<Variable_Int>("save_SpiritPoints");
+            changeCounter = ES3.Load<Variable_Int>("save_SpiritPoints").value;
+            
+        } else {
+            ES3.Save("save_SpiritPoints", SpiritPoints);
+        }
         
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+
             
     }
 }

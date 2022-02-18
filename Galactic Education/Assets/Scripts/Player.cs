@@ -12,19 +12,18 @@ public class Player : MonoBehaviour
 
     private Inventory inventory;
     private List<Item> itemList;
-    public Variable_Int Spirit_Score;
+    
+    public Spirit_Score sp;
+
+
     
 
     [Command("spiritScore")]
     public void setSpiritScore(int amount){
 
-        if (amount > 999){
-            Spirit_Score.value = 999;
-        } else if (amount < 0) {
-            Spirit_Score.value = 0;
-        } else {
-            Spirit_Score.value = amount;
-        }
+        
+
+        sp.setSpiritScore(amount);
         
         
     }

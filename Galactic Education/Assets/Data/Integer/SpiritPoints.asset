@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b684d003e1a44054db591da78f5a55cb, type: 3}
   m_Name: SpiritPoints
   m_EditorClassIdentifier: 
-  value: 0
+  value: 100

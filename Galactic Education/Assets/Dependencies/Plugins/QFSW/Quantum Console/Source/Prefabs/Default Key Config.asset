@@ -24,9 +24,9 @@ MonoBehaviour:
     Alt: 0
     Shift: 0
   ToggleConsoleVisibilityKey:
-    Key: 284
-    Ctrl: 0
-    Alt: 1
+    Key: 92
+    Ctrl: 1
+    Alt: 0
     Shift: 0
   ZoomInKey:
     Key: 61

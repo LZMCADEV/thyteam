@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deleteBuildLogs: 1
-  deleteBuildLogsAfterDays: 14
+  deleteBuildLogsAfterDays: 30
   openLogManually: 0
   normalLogOnlyFirstLineStackTrace: 1
   titleFontSize: 30
@@ -265,7 +265,7 @@ MonoBehaviour:
   disableUnityDevelopmentConsole: 0
   useSameEditorAsBuildShowKey: 1
   showToggleKeyEditor:
-    keyCode: 0
+    keyCode: 290
     specialKeys: 2
   showToggleKeyBuild:
     keyCode: 290
@@ -404,10 +404,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableCameraOnStart: 0
   showOnStart: 0
-  useSameEditorAsBuildShowKey: 0
+  useSameEditorAsBuildShowKey: 1
   showToggleKeyEditor:
     keyCode: 291
-    specialKeys: 0
+    specialKeys: 2
   showToggleKeyBuild:
     keyCode: 291
     specialKeys: 0

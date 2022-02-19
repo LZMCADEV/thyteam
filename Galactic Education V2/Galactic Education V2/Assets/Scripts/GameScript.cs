@@ -102,7 +102,22 @@ public class GameScript : MonoBehaviour
 
     }
     [Command("shuffle")]
+    public void reShuffle(){
+        tiles = ES3.Load<TilesScript[]>("save_backupTiles");
+        emptySpaceIndex = ES3.Load<int>("save_emptySpaceIndex");
+        emptySpace = ES3.Load<Transform>("save_emptySpace");
+        isSlidingPuzzleCompleted.value = false;
+        ES3.Save("save_emptySpace", emptySpace);
+        ES3.Save("save_emptySpaceIndex", emptySpaceIndex);
+        ES3.Save("save_tiles", tiles);
+        Shuffle();
+    }
+
+
     public void Shuffle(){
+        tiles = ES3.Load<TilesScript[]>("save_backupTiles");
+        emptySpaceIndex = ES3.Load<int>("save_emptySpaceIndex");
+        emptySpace = ES3.Load<Transform>("save_emptySpace");
         isSlidingPuzzleCompleted.value = false;
         if (emptySpaceIndex != 8){
             

@@ -10,15 +10,10 @@ public class Delete_Data : MonoBehaviour
 {
     [Command("delete_all_data")]
     public void Delete(){
-        ES3.DeleteFile("save_PlayerPos");
-        ES3.DeleteFile("alreadyShuffled");
-        ES3.DeleteFile("save_tiles");
-        ES3.DeleteFile("save_isSlidingPuzzleCompleted");
-        ES3.DeleteFile("save_backupTiles");
+        foreach(var key in ES3.GetKeys("SaveFile.es3")){
+            ES3.DeleteKey(key);
+        }
         
-        ES3.DeleteFile("save_itemList");
-        ES3.DeleteFile("save_SpiritPoints");
-        ES3.DeleteFile("save_listStuff");
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 

@@ -24,6 +24,7 @@ public class GameScript : MonoBehaviour
         
         
         if(ES3.KeyExists("alreadyShuffled")) {
+            emptySpace = ES3.Load<Transform>("save_emptySpace");
             emptySpaceIndex = ES3.Load<int>("save_emptySpaceIndex");
             tiles = ES3.Load<TilesScript[]>("save_tiles");
             isSlidingPuzzleCompleted.value = ES3.Load<bool>("save_isSlidingPuzzleCompleted");
@@ -31,6 +32,7 @@ public class GameScript : MonoBehaviour
 
 
         } else {
+            ES3.Save("save_emptySpace", emptySpace);
             ES3.Save("save_emptySpaceIndex", emptySpaceIndex);
             ES3.Save("save_backupTiles", tiles);
             Shuffle();
@@ -56,7 +58,8 @@ public class GameScript : MonoBehaviour
     }
     void Update()
     {
-
+        emptySpaceIndex = ES3.Load<int>("save_emptySpaceIndex");
+        emptySpace = ES3.Load<Transform>("save_emptySpace");
         if (Input.GetMouseButtonDown(0)&& !isSlidingPuzzleCompleted.value ){
             Ray ray = _camera.ScreenPointToRay(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
@@ -71,6 +74,8 @@ public class GameScript : MonoBehaviour
                     tiles[emptySpaceIndex] = tiles[tileIndex];
                     tiles[tileIndex] = null;
                     emptySpaceIndex = tileIndex;
+                    ES3.Save("save_emptySpace", emptySpace);
+                    ES3.Save("save_emptySpaceIndex", emptySpaceIndex);
                     
                 }
             }
@@ -90,7 +95,7 @@ public class GameScript : MonoBehaviour
                 
             }
         }
-        ES3.Save("save_emptySpaceIndex", emptySpaceIndex);
+        
         ES3.Save("save_tiles", tiles);
 
 
@@ -129,7 +134,7 @@ public class GameScript : MonoBehaviour
 
             }
         } while (invertion%2 != 0);
-
+        ES3.Save("save_emptySpace", emptySpace);
         ES3.Save("save_emptySpaceIndex", emptySpaceIndex);
         ES3.Save("save_tiles", tiles);
     }

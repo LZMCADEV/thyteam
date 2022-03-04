@@ -1,55 +1,64 @@
 fileFormatVersion: 2
-guid: d0edec8d04901b34b8c08e3be991ae55
+guid: 3f3ff53eb6f438a4ab8bc54f397e36aa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6137007217024267201
-    second: Player Idle_0
+      213: 7698365793977933477
+    second: Player Attack Ruler_0
   - first:
-      213: -8416804778740628856
-    second: Player Idle_1
+      213: -8418798231789062237
+    second: Player Attack Ruler_1
   - first:
-      213: -4269071924193232105
-    second: Player Idle_2
+      213: 6219742471581508439
+    second: Player Attack Ruler_2
   - first:
-      213: 5078832844186053437
-    second: Player Idle_3
+      213: 4595110105335037838
+    second: Player Attack Ruler_3
   - first:
-      213: -7215349037938101137
-    second: Player Idle_4
+      213: 7642579142066359633
+    second: Player Attack Ruler_4
   - first:
-      213: -2327266042211786159
-    second: Player Idle_5
+      213: -749140231892606770
+    second: Player Attack Ruler_5
   - first:
-      213: 9161525504018237102
-    second: Player Idle_6
+      213: 1749004860203190649
+    second: Player Attack Ruler_6
   - first:
-      213: -7081395702228199228
-    second: Player Idle_7
+      213: 3123815326854679826
+    second: Player Attack Ruler_7
   - first:
-      213: 4255408574757407617
-    second: Player Idle_8
+      213: -207620453228026009
+    second: Player Attack Ruler_8
   - first:
-      213: -2569632519869136580
-    second: Player Idle_9
+      213: -8716135411056226395
+    second: Player Attack Ruler_9
   - first:
-      213: 3158241403247679141
-    second: Player Idle_10
+      213: 4084762090469131951
+    second: Player Attack Ruler_10
   - first:
-      213: 8312666933360773580
-    second: Player Idle_11
+      213: 7875880365990855698
+    second: Player Attack Ruler_11
   - first:
-      213: -6452889026194557210
-    second: Player Idle_12
+      213: 380865984987248044
+    second: Player Attack Ruler_12
   - first:
-      213: -1012480836273715097
-    second: Player Idle_13
+      213: -3062294392985301981
+    second: Player Attack Ruler_13
   - first:
-      213: -1637311429295139926
-    second: Player Idle_14
+      213: -6258669042724542478
+    second: Player Attack Ruler_14
   - first:
-      213: -3311168811296648645
-    second: Player Idle_15
+      213: 6750890631651663615
+    second: Player Attack Ruler_15
+  - first:
+      213: -8653670384490726917
+    second: Player Attack Ruler_16
+  - first:
+      213: 2768746400583415372
+    second: Player Attack Ruler_17
+  - first:
+      213: -8868291110516634839
+    second: Player Attack Ruler_18
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -151,337 +160,337 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player Idle_0
+      name: Player Attack Ruler_0
       rect:
         serializedVersion: 2
-        x: 1389
-        y: 2462
-        width: 308
+        x: 638
+        y: 3182
+        width: 484
         height: 372
       alignment: 9
-      pivot: {x: 0.58116883, y: 0.33333334}
+      pivot: {x: 0.3595041, y: 0.44892472}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3c824d8378f4daa0800000000000000
-      internalID: -6137007217024267201
+      spriteID: 5ae9215e6e616da60800000000000000
+      internalID: 7698365793977933477
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Idle_1
+      name: Player Attack Ruler_1
       rect:
         serializedVersion: 2
-        x: 1711
-        y: 2462
-        width: 308
-        height: 356
+        x: 1246
+        y: 2927
+        width: 516
+        height: 612
       alignment: 9
-      pivot: {x: 0.58116883, y: 0.3483146}
+      pivot: {x: 0.34496123, y: 0.66176474}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 882ca5bd5a0813b80800000000000000
-      internalID: -8416804778740628856
+      spriteID: 3a7b686ec9b6a2b80800000000000000
+      internalID: -8418798231789062237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Idle_2
+      name: Player Attack Ruler_2
       rect:
         serializedVersion: 2
-        x: 2030
-        y: 2462
+        x: 1982
+        y: 2910
+        width: 596
+        height: 628
+      alignment: 9
+      pivot: {x: 0.46308726, y: 0.6735669}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753a60503d6f05650800000000000000
+      internalID: 6219742471581508439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Attack Ruler_3
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 3006
+        width: 596
+        height: 532
+      alignment: 9
+      pivot: {x: 0.7852349, y: 0.6146617}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f7d4c7b4c15cf30800000000000000
+      internalID: 4595110105335037838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Attack Ruler_4
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 2334
         width: 308
+        height: 516
+      alignment: 9
+      pivot: {x: 0.29220778, y: 0.4224806}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15dcca2dc35ef0a60800000000000000
+      internalID: 7642579142066359633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Attack Ruler_5
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 2334
+        width: 612
+        height: 532
+      alignment: 9
+      pivot: {x: 0.64379084, y: 0.41165414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0661f9de48a95f0800000000000000
+      internalID: -749140231892606770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Attack Ruler_6
+      rect:
+        serializedVersion: 2
+        x: 1886
+        y: 2270
+        width: 532
+        height: 548
+      alignment: 9
+      pivot: {x: 0.59210527, y: 0.5127737}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 979c7da57a6b54810800000000000000
+      internalID: 1749004860203190649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Attack Ruler_7
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 2096
+        width: 340
+        height: 612
+      alignment: 9
+      pivot: {x: 0.35588235, y: 0.74346405}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d08153d750a5b20800000000000000
+      internalID: 3123815326854679826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Attack Ruler_8
+      rect:
+        serializedVersion: 2
+        x: 1354
+        y: 1406
+        width: 548
+        height: 628
+      alignment: 9
+      pivot: {x: 0.7718978, y: 0.38535032}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 767ec3d3c426e1df0800000000000000
+      internalID: -207620453228026009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Attack Ruler_9
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 1408
+        width: 548
+        height: 595
+      alignment: 9
+      pivot: {x: 0.26459855, y: 0.40336135}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af4ac116011a0780800000000000000
+      internalID: -8716135411056226395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Attack Ruler_12
+      rect:
+        serializedVersion: 2
+        x: 2943
+        y: 1406
+        width: 548
+        height: 580
+      alignment: 9
+      pivot: {x: 0.26824817, y: 0.41724136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca5b13e689b194500800000000000000
+      internalID: 380865984987248044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Attack Ruler_14
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 1406
+        width: 548
         height: 372
       alignment: 9
-      pivot: {x: 0.58116883, y: 0.33333334}
+      pivot: {x: 0.7627737, y: 0.64784944}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71b7ed514b531c4c0800000000000000
-      internalID: -4269071924193232105
+      spriteID: 2f76bad5aadb429a0800000000000000
+      internalID: -6258669042724542478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Idle_3
+      name: Player Attack Ruler_15
       rect:
         serializedVersion: 2
-        x: 2350
-        y: 2462
+        x: 846
+        y: 753
         width: 308
-        height: 356
+        height: 516
       alignment: 9
-      pivot: {x: 0.58116883, y: 0.3483146}
+      pivot: {x: 0.7077922, y: 0.41666666}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3beb4f1093ab7640800000000000000
-      internalID: 5078832844186053437
+      spriteID: ffe1c11034bffad50800000000000000
+      internalID: 6750890631651663615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Idle_4
+      name: Player Attack Ruler_16
       rect:
         serializedVersion: 2
-        x: 1468
-        y: 2062
-        width: 308
-        height: 372
+        x: 1326
+        y: 750
+        width: 612
+        height: 532
       alignment: 9
-      pivot: {x: 0.4025974, y: 0.3252688}
+      pivot: {x: 0.35620916, y: 0.40977445}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f643e3f474eeddb90800000000000000
-      internalID: -7215349037938101137
+      spriteID: bf9bc1962acf7e780800000000000000
+      internalID: -8653670384490726917
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Idle_5
+      name: Player Attack Ruler_17
       rect:
         serializedVersion: 2
-        x: 1790
-        y: 2061
-        width: 308
-        height: 356
+        x: 2110
+        y: 686
+        width: 532
+        height: 548
       alignment: 9
-      pivot: {x: 0.3961039, y: 0.34269664}
+      pivot: {x: 0.40977445, y: 0.51642334}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15223207dd3e3bfd0800000000000000
-      internalID: -2327266042211786159
+      spriteID: c467aef8e209c6620800000000000000
+      internalID: 2768746400583415372
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player Idle_6
+      name: Player Attack Ruler_18
       rect:
         serializedVersion: 2
-        x: 2094
-        y: 2062
-        width: 308
-        height: 372
+        x: 2908
+        y: 510
+        width: 340
+        height: 612
       alignment: 9
-      pivot: {x: 0.3961039, y: 0.3252688}
+      pivot: {x: 0.64705884, y: 0.748366}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea640b3f7e6442f70800000000000000
-      internalID: 9161525504018237102
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle_7
-      rect:
-        serializedVersion: 2
-        x: 2415
-        y: 2062
-        width: 308
-        height: 356
-      alignment: 9
-      pivot: {x: 0.3961039, y: 0.33988765}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4c8d5bea024d9bd90800000000000000
-      internalID: -7081395702228199228
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle_8
-      rect:
-        serializedVersion: 2
-        x: 1422
-        y: 1678
-        width: 276
-        height: 372
-      alignment: 9
-      pivot: {x: 0.4963768, y: 0.41666666}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 18b01987d8f3e0b30800000000000000
-      internalID: 4255408574757407617
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle_9
-      rect:
-        serializedVersion: 2
-        x: 1742
-        y: 1678
-        width: 276
-        height: 356
-      alignment: 9
-      pivot: {x: 0.4963768, y: 0.38764045}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c3188e176d4d65cd0800000000000000
-      internalID: -2569632519869136580
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle_10
-      rect:
-        serializedVersion: 2
-        x: 2046
-        y: 1678
-        width: 276
-        height: 372
-      alignment: 9
-      pivot: {x: 0.5, y: 0.4139785}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5a6528bb2d354db20800000000000000
-      internalID: 3158241403247679141
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle_11
-      rect:
-        serializedVersion: 2
-        x: 2382
-        y: 1678
-        width: 276
-        height: 356
-      alignment: 9
-      pivot: {x: 0.5, y: 0.38764045}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc9ca1398868c5370800000000000000
-      internalID: 8312666933360773580
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle_12
-      rect:
-        serializedVersion: 2
-        x: 1374
-        y: 1294
-        width: 306
-        height: 372
-      alignment: 9
-      pivot: {x: 0.6038961, y: 0.32795697}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e638aa9e9bb276a0800000000000000
-      internalID: -6452889026194557210
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle_13
-      rect:
-        serializedVersion: 2
-        x: 1681
-        y: 1294
-        width: 305
-        height: 356
-      alignment: 9
-      pivot: {x: 0.60714287, y: 0.34269664}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 768c3043b02f2f1f0800000000000000
-      internalID: -1012480836273715097
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle_14
-      rect:
-        serializedVersion: 2
-        x: 1998
-        y: 1294
-        width: 307
-        height: 372
-      alignment: 9
-      pivot: {x: 0.6038961, y: 0.3252688}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aa31d2e0ee91749e0800000000000000
-      internalID: -1637311429295139926
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Player Idle_15
-      rect:
-        serializedVersion: 2
-        x: 2306
-        y: 1293
-        width: 298
-        height: 356
-      alignment: 9
-      pivot: {x: 0.60714287, y: 0.34269664}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b329f4b628d5c02d0800000000000000
-      internalID: -3311168811296648645
+      spriteID: 92bc6e0a8308de480800000000000000
+      internalID: -8868291110516634839
       vertices: []
       indices: 
       edges: []

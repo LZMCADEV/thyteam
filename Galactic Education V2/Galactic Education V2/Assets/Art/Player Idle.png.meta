@@ -261,7 +261,7 @@ TextureImporter:
         serializedVersion: 2
         x: 1790
         y: 2061
-        width: 308
+        width: 306
         height: 356
       alignment: 9
       pivot: {x: 0.3961039, y: 0.34269664}
@@ -286,7 +286,7 @@ TextureImporter:
         height: 372
       alignment: 9
       pivot: {x: 0.3961039, y: 0.3252688}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 2, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -323,11 +323,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1422
-        y: 1678
+        y: 1679
         width: 276
         height: 372
       alignment: 9
-      pivot: {x: 0.4963768, y: 0.41666666}
+      pivot: {x: 0.4963768, y: 0.37096775}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -343,7 +343,7 @@ TextureImporter:
       name: Player Idle_9
       rect:
         serializedVersion: 2
-        x: 1742
+        x: 1747
         y: 1678
         width: 276
         height: 356
@@ -369,7 +369,7 @@ TextureImporter:
         width: 276
         height: 372
       alignment: 9
-      pivot: {x: 0.5, y: 0.4139785}
+      pivot: {x: 0.4963768, y: 0.37096775}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -390,7 +390,7 @@ TextureImporter:
         width: 276
         height: 356
       alignment: 9
-      pivot: {x: 0.5, y: 0.38764045}
+      pivot: {x: 0.4963768, y: 0.38764045}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

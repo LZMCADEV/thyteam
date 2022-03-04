@@ -2,7 +2,7 @@
     "name": "Player",
     "maps": [
         {
-            "name": "Inventory",
+            "name": "Player",
             "id": "5f2df30e-1a67-40fc-98c9-7b0981410102",
             "actions": [
                 {
@@ -12,6 +12,15 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Attack",
+                    "type": "Button",
+                    "id": "2f9fc749-f007-45f9-bb2d-14eec087c292",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press(behavior=1)",
                     "initialStateCheck": false
                 }
             ],
@@ -24,6 +33,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Inventory",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "83bf11c7-eeb3-4221-b797-0c378905fa4a",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Press(behavior=1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Attack",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

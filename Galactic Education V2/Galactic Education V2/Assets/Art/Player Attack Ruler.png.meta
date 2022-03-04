@@ -163,12 +163,12 @@ TextureImporter:
       name: Player Attack Ruler_0
       rect:
         serializedVersion: 2
-        x: 638
-        y: 3182
+        x: 641
+        y: 3184
         width: 484
         height: 372
       alignment: 9
-      pivot: {x: 0.3595041, y: 0.44892472}
+      pivot: {x: 0.3677686, y: 0.3360215}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -184,12 +184,12 @@ TextureImporter:
       name: Player Attack Ruler_1
       rect:
         serializedVersion: 2
-        x: 1246
-        y: 2927
+        x: 1245
+        y: 2925
         width: 516
         height: 612
       alignment: 9
-      pivot: {x: 0.34496123, y: 0.66176474}
+      pivot: {x: 0.35271317, y: 0.6013072}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -205,12 +205,12 @@ TextureImporter:
       name: Player Attack Ruler_2
       rect:
         serializedVersion: 2
-        x: 1982
+        x: 1983
         y: 2910
         width: 596
         height: 628
       alignment: 9
-      pivot: {x: 0.46308726, y: 0.6735669}
+      pivot: {x: 0.46308726, y: 0.60987264}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -231,7 +231,7 @@ TextureImporter:
         width: 596
         height: 532
       alignment: 9
-      pivot: {x: 0.7852349, y: 0.6146617}
+      pivot: {x: 0.7852349, y: 0.5357143}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -252,7 +252,7 @@ TextureImporter:
         width: 308
         height: 516
       alignment: 9
-      pivot: {x: 0.29220778, y: 0.4224806}
+      pivot: {x: 0.4397494, y: 0.2491933}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -273,7 +273,7 @@ TextureImporter:
         width: 612
         height: 532
       alignment: 9
-      pivot: {x: 0.64379084, y: 0.41165414}
+      pivot: {x: 0.71732026, y: 0.2424812}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -289,12 +289,12 @@ TextureImporter:
       name: Player Attack Ruler_6
       rect:
         serializedVersion: 2
-        x: 1886
+        x: 1887
         y: 2270
         width: 532
         height: 548
       alignment: 9
-      pivot: {x: 0.59210527, y: 0.5127737}
+      pivot: {x: 0.67105263, y: 0.3558394}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -311,11 +311,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2910
-        y: 2096
+        y: 2095
         width: 340
-        height: 612
+        height: 611
       alignment: 9
-      pivot: {x: 0.35588235, y: 0.74346405}
+      pivot: {x: 0.4911765, y: 0.60457516}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -331,12 +331,12 @@ TextureImporter:
       name: Player Attack Ruler_8
       rect:
         serializedVersion: 2
-        x: 1354
+        x: 1353
         y: 1406
         width: 548
         height: 628
       alignment: 9
-      pivot: {x: 0.7718978, y: 0.38535032}
+      pivot: {x: 0.75547445, y: 0.21974522}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -357,7 +357,7 @@ TextureImporter:
         width: 548
         height: 595
       alignment: 9
-      pivot: {x: 0.26459855, y: 0.40336135}
+      pivot: {x: 0.24452555, y: 0.22521009}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -378,7 +378,7 @@ TextureImporter:
         width: 548
         height: 580
       alignment: 9
-      pivot: {x: 0.26824817, y: 0.41724136}
+      pivot: {x: 0.24635036, y: 0.23275863}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -399,7 +399,7 @@ TextureImporter:
         width: 548
         height: 372
       alignment: 9
-      pivot: {x: 0.7627737, y: 0.64784944}
+      pivot: {x: 0.7484022, y: 0.36102787}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -420,7 +420,7 @@ TextureImporter:
         width: 308
         height: 516
       alignment: 9
-      pivot: {x: 0.7077922, y: 0.41666666}
+      pivot: {x: 0.5487013, y: 0.23255813}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -441,7 +441,7 @@ TextureImporter:
         width: 612
         height: 532
       alignment: 9
-      pivot: {x: 0.35620916, y: 0.40977445}
+      pivot: {x: 0.2761438, y: 0.23872182}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -462,7 +462,7 @@ TextureImporter:
         width: 532
         height: 548
       alignment: 9
-      pivot: {x: 0.40977445, y: 0.51642334}
+      pivot: {x: 0.31390977, y: 0.34854016}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -483,7 +483,7 @@ TextureImporter:
         width: 340
         height: 612
       alignment: 9
-      pivot: {x: 0.64705884, y: 0.748366}
+      pivot: {x: 0.5058824, y: 0.5980392}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

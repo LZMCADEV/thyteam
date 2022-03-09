@@ -6,7 +6,7 @@ public class PlayerCombat : MonoBehaviour
 {
     
     public Animator animator;
-    private bool isAttacking = false;
+    
     public float attackRate = 1f;
     float nextAttackTime = 0f;
     // Update is called once per frame

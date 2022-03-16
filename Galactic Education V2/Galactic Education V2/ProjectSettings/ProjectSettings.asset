@@ -635,6 +635,7 @@ PlayerSettings:
   XboxOneOverrideIdentityName: 
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
+
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 

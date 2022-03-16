@@ -13,9 +13,7 @@ public class Inventory
     private Action<Item> useItemAction;
     private int itemDisplacement = 0;
 
-    public void Start(){
-        
-    }
+    
 
     public Inventory(Action<Item> useItemAction) {
         this.useItemAction = useItemAction;

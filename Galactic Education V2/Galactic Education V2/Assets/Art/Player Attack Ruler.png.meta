@@ -1,0 +1,513 @@
+fileFormatVersion: 2
+guid: 3f3ff53eb6f438a4ab8bc54f397e36aa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7698365793977933477
+    second: Player Attack Ruler_0
+  - first:
+      213: -8418798231789062237
+    second: Player Attack Ruler_1
+  - first:
+      213: 6219742471581508439
+    second: Player Attack Ruler_2
+  - first:
+      213: 4595110105335037838
+    second: Player Attack Ruler_3
+  - first:
+      213: 7642579142066359633
+    second: Player Attack Ruler_4
+  - first:
+      213: -749140231892606770
+    second: Player Attack Ruler_5
+  - first:
+      213: 1749004860203190649
+    second: Player Attack Ruler_6
+  - first:
+      213: 3123815326854679826
+    second: Player Attack Ruler_7
+  - first:
+      213: -207620453228026009
+    second: Player Attack Ruler_8
+  - first:
+      213: -8716135411056226395
+    second: Player Attack Ruler_9
+  - first:
+      213: 4084762090469131951
+    second: Player Attack Ruler_10
+  - first:
+      213: 7875880365990855698
+    second: Player Attack Ruler_11
+  - first:
+      213: 380865984987248044
+    second: Player Attack Ruler_12
+  - first:
+      213: -3062294392985301981
+    second: Player Attack Ruler_13
+  - first:
+      213: -6258669042724542478
+    second: Player Attack Ruler_14
+  - first:
+      213: 6750890631651663615
+    second: Player Attack Ruler_15
+  - first:
+      213: -8653670384490726917
+    second: Player Attack Ruler_16
+  - first:
+      213: 2768746400583415372
+    second: Player Attack Ruler_17
+  - first:
+      213: -8868291110516634839
+    second: Player Attack Ruler_18
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 256
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Player Attack Ruler_0
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 3184
+        width: 484
+        height: 372
+      alignment: 9
+      pivot: {x: 0.3677686, y: 0.3360215}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ae9215e6e616da60800000000000000
+      internalID: 7698365793977933477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Attack Ruler_1
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 2925
+        width: 516
+        height: 612
+      alignment: 9
+      pivot: {x: 0.35271317, y: 0.6013072}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7b686ec9b6a2b80800000000000000
+      internalID: -8418798231789062237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Attack Ruler_2
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 2910
+        width: 596
+        height: 628
+      alignment: 9
+      pivot: {x: 0.46308726, y: 0.60987264}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753a60503d6f05650800000000000000
+      internalID: 6219742471581508439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Attack Ruler_3
+      rect:
+        serializedVersion: 2
+        x: 2734
+        y: 3006
+        width: 596
+        height: 532
+      alignment: 9
+      pivot: {x: 0.7852349, y: 0.5357143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f7d4c7b4c15cf30800000000000000
+      internalID: 4595110105335037838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Attack Ruler_4
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 2334
+        width: 308
+        height: 516
+      alignment: 9
+      pivot: {x: 0.4397494, y: 0.2491933}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15dcca2dc35ef0a60800000000000000
+      internalID: 7642579142066359633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Attack Ruler_5
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 2334
+        width: 612
+        height: 532
+      alignment: 9
+      pivot: {x: 0.71732026, y: 0.2424812}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0661f9de48a95f0800000000000000
+      internalID: -749140231892606770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Attack Ruler_6
+      rect:
+        serializedVersion: 2
+        x: 1887
+        y: 2270
+        width: 532
+        height: 548
+      alignment: 9
+      pivot: {x: 0.67105263, y: 0.3558394}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 979c7da57a6b54810800000000000000
+      internalID: 1749004860203190649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Attack Ruler_7
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 2095
+        width: 340
+        height: 611
+      alignment: 9
+      pivot: {x: 0.4911765, y: 0.60457516}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d08153d750a5b20800000000000000
+      internalID: 3123815326854679826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Attack Ruler_8
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 1406
+        width: 548
+        height: 628
+      alignment: 9
+      pivot: {x: 0.75547445, y: 0.21974522}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 767ec3d3c426e1df0800000000000000
+      internalID: -207620453228026009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Attack Ruler_9
+      rect:
+        serializedVersion: 2
+        x: 2240
+        y: 1408
+        width: 548
+        height: 595
+      alignment: 9
+      pivot: {x: 0.24452555, y: 0.22521009}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af4ac116011a0780800000000000000
+      internalID: -8716135411056226395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Attack Ruler_12
+      rect:
+        serializedVersion: 2
+        x: 2943
+        y: 1406
+        width: 548
+        height: 580
+      alignment: 9
+      pivot: {x: 0.24635036, y: 0.23275863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca5b13e689b194500800000000000000
+      internalID: 380865984987248044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Attack Ruler_14
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 1406
+        width: 548
+        height: 372
+      alignment: 9
+      pivot: {x: 0.7484022, y: 0.36102787}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f76bad5aadb429a0800000000000000
+      internalID: -6258669042724542478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Attack Ruler_15
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 753
+        width: 308
+        height: 516
+      alignment: 9
+      pivot: {x: 0.5487013, y: 0.23255813}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe1c11034bffad50800000000000000
+      internalID: 6750890631651663615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Attack Ruler_16
+      rect:
+        serializedVersion: 2
+        x: 1326
+        y: 750
+        width: 612
+        height: 532
+      alignment: 9
+      pivot: {x: 0.2761438, y: 0.23872182}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf9bc1962acf7e780800000000000000
+      internalID: -8653670384490726917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Attack Ruler_17
+      rect:
+        serializedVersion: 2
+        x: 2110
+        y: 686
+        width: 532
+        height: 548
+      alignment: 9
+      pivot: {x: 0.31390977, y: 0.34854016}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c467aef8e209c6620800000000000000
+      internalID: 2768746400583415372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Attack Ruler_18
+      rect:
+        serializedVersion: 2
+        x: 2908
+        y: 510
+        width: 340
+        height: 612
+      alignment: 9
+      pivot: {x: 0.5058824, y: 0.5980392}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92bc6e0a8308de480800000000000000
+      internalID: -8868291110516634839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -15,6 +15,17 @@ public class Player : MonoBehaviour
     
     public Spirit_Score sp;
 
+    public int maxHealth = 100;
+    public int currentHealth = 100;
+    public HealthBar healthBar;
+
+    
+
+    [Command("damagePlayer")]
+    void TakeDamage(int damage){
+        currentHealth -= damage;
+        healthBar.setHealth(currentHealth);
+    }
 
     
 
@@ -51,7 +62,7 @@ public class Player : MonoBehaviour
     {
 
         
-
+        currentHealth = maxHealth;
 
         if(ES3.KeyExists("save_PlayerPos")) {  
             transform.position = ES3.Load<Vector3>("save_PlayerPos");
@@ -104,6 +115,10 @@ public class Player : MonoBehaviour
 
     public void Update(){
         ES3.Save("save_PlayerPos", transform.position);
+
+        if (Input.GetKeyDown(KeyCode.H)){
+            TakeDamage(10);
+        }
     }
     
 }

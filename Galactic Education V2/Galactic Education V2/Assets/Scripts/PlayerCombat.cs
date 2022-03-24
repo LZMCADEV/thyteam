@@ -6,19 +6,45 @@ public class PlayerCombat : MonoBehaviour
 {
     
     public Animator animator;
-    
+
+    public int maxStamina = 100;
+    public int currentStamina = 100;
+    public StaminaBar staminaBar;
+    public int tempStaminaDecreaseRate = 10;
+    public float rechargeRate = 2f;
+    float rechargeTime;
+
     public float attackRate = 1f;
+    
     float nextAttackTime = 0f;
     // Update is called once per frame
+
+    void Awake()
+    {
+        currentStamina = maxStamina;
+
+    }
+
     void Update()
     {
-        if(Time.time >= nextAttackTime){
+        
+        if (Time.time >= nextAttackTime && (currentStamina - tempStaminaDecreaseRate) >= 0){
             if (Input.GetMouseButtonUp(0)){
                 Attack();
+                currentStamina -= tempStaminaDecreaseRate;
                 nextAttackTime = Time.time + 1f/attackRate;
+                staminaBar.setStamina(currentStamina);
             }
         }
-        
+
+        if (Time.time >= rechargeTime){
+            rechargeTime = Time.time + 1f/rechargeRate;
+            currentStamina += 1;
+            staminaBar.setStamina(currentStamina);
+
+        }
+
+
     }
 
     public void Attack(){

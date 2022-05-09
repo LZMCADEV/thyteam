@@ -11,5 +11,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SlidingPuzzle_Scene.unity
     guid: 469517e551a4b4646ab65ee5ee7fbfa9
+  - enabled: 1
+    path: Assets/Scenes/FirstLevel(lvl1).unity
+    guid: a645be9e432503a43b4961e4b48919f8
+  - enabled: 1
+    path: Assets/UI Stuff/Main Menu.unity
+    guid: 701695113a45a314c9129c5b28d8b2af
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: c1c27a55ed22128478d00525eb97ffa5, type: 2}

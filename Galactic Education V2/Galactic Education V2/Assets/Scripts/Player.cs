@@ -42,17 +42,17 @@ public class Player : MonoBehaviour
     [Command("add_health_potion")]
     public void addHealthPotion(int amount){
         
-        itemList = ES3.Load<List<Item>>("save_itemList");
+        //itemList = ES3.Load<List<Item>>("save_itemList");
         inventory.AddItem(new Item { itemType = Item.ItemType.HealthPotion, amount = amount});
-        ES3.Save("save_itemList", inventory.GetItemlist());
+        //ES3.Save("save_itemList", inventory.GetItemlist());
         
     }
 
     [Command("add_stamina_potion")]
     public void addStaminaPotion(int amount){
-        itemList = ES3.Load<List<Item>>("save_itemList");
+        //itemList = ES3.Load<List<Item>>("save_itemList");
         inventory.AddItem(new Item { itemType = Item.ItemType.StaminaPotion, amount = amount});
-        ES3.Save("save_itemList", inventory.GetItemlist());
+        //ES3.Save("save_itemList", inventory.GetItemlist());
         
     }
 
@@ -65,7 +65,7 @@ public class Player : MonoBehaviour
         currentHealth = maxHealth;
 
         if(ES3.KeyExists("save_PlayerPos")) {  
-            transform.position = ES3.Load<Vector3>("save_PlayerPos");
+            //transform.position = ES3.Load<Vector3>("save_PlayerPos");
             
         } else {
             ES3.Save("save_PlayerPos", transform.position);
@@ -114,7 +114,7 @@ public class Player : MonoBehaviour
     }
 
     public void Update(){
-        ES3.Save("save_PlayerPos", transform.position);
+        //ES3.Save("save_PlayerPos", transform.position);
 
         if (Input.GetKeyDown(KeyCode.H)){
             TakeDamage(10);

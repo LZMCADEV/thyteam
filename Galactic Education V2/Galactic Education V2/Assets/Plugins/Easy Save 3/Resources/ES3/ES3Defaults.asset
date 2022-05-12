@@ -39,10 +39,12 @@ MonoBehaviour:
     - QFSW.QC.Serializers
     - QFSW.QC.UI
     - QFSW.QC.Suggestors
+    - NavMeshComponents
     - PsdPlugin
     - QFSW.QC.QGUI
     - QFSW.QC.Editor
     - QFSW.QC.Editor.Tools
+    - NavMeshComponentsEditor
     showAdvancedSettings: 0
   addMgrToSceneAutomatically: 0
   autoUpdateReferences: 1

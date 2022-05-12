@@ -37,7 +37,7 @@ public class PlayerCombat : MonoBehaviour
             }
         }
 
-        if (Time.time >= rechargeTime){
+        if (Time.time >= rechargeTime && currentStamina < maxStamina){
             rechargeTime = Time.time + 1f/rechargeRate;
             currentStamina += 1;
             staminaBar.setStamina(currentStamina);
